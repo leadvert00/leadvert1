@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 4rem;
+  align-items: center;
+  height: 4rem;
+  position: relative;
+}
+.main-nav-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.navbar-brand {
+  z-index: 800;
+}
+
+/* .hero {
+ 
+} */
+/* *********************************** */
+
+.hero-content {
+  display: flex;
+
+  padding: 5rem 4em;
+  min-height: 20rem;
+}
+
+.textBox {
+  height: 5rem;
+  overflow: hidden;
+}
+
+.textBox ul {
+  margin: 0;
+  padding: 0;
+  animation: moveText 8s infinite;
+}
+
+.textBox ul li {
+  display: flex;
+  height: 5rem;
+  list-style: none;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(-1%);
+
+    display: none;
+  }
+  15%,
+  25% {
+    transform: translateY(-20%);
+  }
+
+  40%,
+  50% {
+    transform: translateY(-40%);
+  }
+
+  65%,
+  75% {
+    transform: translateY(-60%);
+  }
+
+  90%,
+  100% {
+    transform: translateY(-80%);
+  }
+}
+
+.hero-media {
+  height: 80vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    padding-top: 0rem;
+    padding: 0 1rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .main-nav-container {
+    display: none;
+  }
+  .sidenav {
+    z-index: 0;
+  }
+  .sidenav-container {
+    padding: 0 1rem;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .sidenav-links {
+    padding-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav-links > * + * {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .sidenav-media {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+  }
+  .sidenav-media > * + * {
+    margin-top: 1.2rem;
+  }
+  .hero-content {
+    display: flex;
+    padding: 2rem 0em;
+    min-height: 20rem;
+  }
+  .sidenav-link-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: normal;
+    list-style: none;
+    border-bottom: 0.1rem solid #e8e7e4;
+  }
+  .sidenav-link {
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.5rem;
+  }
+  .nav-btn {
+    letter-spacing: 0.05rem;
+  }
+}
