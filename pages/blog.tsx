@@ -62,7 +62,7 @@ function Blog({ blogs, tags }: any) {
     <div className="container mt-8 md:mt-6 flex flex-col space-y-8">
       <div className="space-y-4">
         <h1 className="text-2xl md:text-3xl font-semibold w-full">
-          Please feel free to find the most recent of our writings here..
+          {/* Please feel free to find the most recent of our writings here.. */}
         </h1>
         <div className="space-y-2">
           <p className="font-medium text-lg">Search blog by Topics</p>
